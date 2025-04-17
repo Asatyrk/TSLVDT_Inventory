@@ -30,7 +30,8 @@
       { "id": "book", "quantity": 1 },
       { "id": "pencil", "quantity": 1 },
       { "id": "notebook", "quantity": 1 },
-      { "id": "viol", "quantity": 1 }
+      { "id": "viol", "quantity": 1 },
+      { "id": "space_suit", "quantity": 1 }
     ]
   },
   {
@@ -39,7 +40,8 @@
       { "id": "poorly_made_dagger", "quantity": 1 },
       { "id": "poorly_made_rope_sling", "quantity": 1 },
       { "id": "poorly_made_spear", "quantity": 1 },
-      { "id": "T-1_Flux_User_Manual", "quantity": 1 }
+      { "id": "T-1_Flux_User_Manual", "quantity": 1 },
+      { "id": "space_suit", "quantity": 1 }
     ]
   },
   {
@@ -49,7 +51,8 @@
       { "id": "pencil", "quantity": 2 },
       { "id": "pen", "quantity": 1 },
       { "id": "entomology_dissection_kit", "quantity": 1 },
-      { "id": "jars_and_jugs", "quantity": 4 }
+      { "id": "jars_and_jugs", "quantity": 4 },
+      { "id": "space_suit", "quantity": 1 }
     ]
   },
   {
@@ -60,7 +63,8 @@
       { "id": "eraser", "quantity": 1 },
       { "id": "dinosaur_toy", "quantity": 1 },
       { "id": "book", "quantity": 1 },
-      { "id": "pen", "quantity": 1 }
+      { "id": "pen", "quantity": 1 },
+      { "id": "space_suit", "quantity": 1 }
     ]
   },
   {
@@ -81,7 +85,8 @@
       { "id": "poorly_made_dagger", "quantity": 1 },
       { "id": "bundle_of_red_flowers", "quantity": 5 },
       { "id": "bundle_of_various_screws", "quantity": 5 },
-      { "id": "sewing_kit", "quantity": 1 }
+      { "id": "sewing_kit", "quantity": 1 },
+      { "id": "space_suit", "quantity": 1 }
     ]
   }
 ]
