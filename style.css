@@ -1,0 +1,326 @@
+/* === Global === */
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #2d333d;
+  color: #f6efe7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+h1 {
+  color: #dd7e6b;
+  font-size: 2.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-shadow: 0 0 6px #ba654e;
+  border-bottom: 3px solid #444;
+  padding-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* === Grid Layout for Items === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 1em; /* Reduced gap between items */
+  margin-top: 2em;
+  padding: 0 1em; /* Reduced padding to the sides */
+}
+
+.item {
+  background-color: #1c1c1c;
+  border: 2px solid #3b414f;
+  border-left: 6px solid #ba654e;
+  padding: 0.6em;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(186, 101, 78, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  width: 100%; 
+  box-sizing: border-box; 
+  margin: 0; 
+  height: auto;
+  min-width: 240px;
+}
+
+.item:hover {
+  transform: translateY(-3px); /* Slightly reduced hover effect */
+  box-shadow: 0 0 10px rgba(221, 126, 107, 0.4);
+}
+
+.item strong {
+  font-size: 1.1em; /* Slightly smaller font */
+  color: #f6efe7;
+  font-weight: bold;
+}
+
+.item em {
+  color: #d4ccc3;
+  font-style: italic;
+  font-size: 0.85em; /* Reduced size for more compact appearance */
+}
+
+.tags {
+  font-size: 0.75em; /* Reduced font size */
+  color: #aaa;
+  margin-top: 0.4em; /* Reduced margin */
+  word-wrap: break-word;
+}
+
+.tags span {
+  background-color: #444;
+  padding: 0.3em 0.5em;
+  border-radius: 6px;
+  margin-right: 0.4em; /* Reduced margin */
+  margin-bottom: 0.4em; /* Reduced margin */
+  display: inline-block;
+  font-size: 0.75em; /* Slightly smaller text */
+  color: #ddd;
+  box-shadow: 0 0 4px rgba(186, 101, 78, 0.2); /* Reduced shadow size */
+}
+
+/* === Recipe Styling === */
+.recipe {
+  background-color: #1c1c1c;
+  border: 2px solid #3b414f;
+  border-left: 6px solid #ba654e;
+  padding: 0.6em;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(186, 101, 78, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  width: 100%; 
+  box-sizing: border-box; 
+  margin: 0;
+}
+
+.recipe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(221, 126, 107, 0.4);
+}
+
+.recipe strong {
+  font-size: 1.1em;
+  color: #f6efe7;
+  font-weight: bold;
+}
+
+.recipe em {
+  color: #d4ccc3;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.recipe .tags {
+  font-size: 0.75em;
+  color: #aaa;
+  margin-top: 0.4em;
+}
+
+.recipe .tags span {
+  background-color: #444;
+  padding: 0.3em 0.5em;
+  border-radius: 6px;
+  margin-right: 0.4em;
+  margin-bottom: 0.4em;
+  display: inline-block;
+  font-size: 0.75em;
+  color: #ddd;
+  box-shadow: 0 0 4px rgba(186, 101, 78, 0.2);
+}
+
+/* === Buttons === */
+.btn {
+  padding: 0.6em 1.2em;
+  background-color: #ba654e;
+  color: #f6efe7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dd7e6b;
+  box-shadow: 0 0 12px #dd7e6b;
+  color: #1c1c1c;
+}
+
+/* === Filter/Search Styling === */
+.search {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.7em 1.2em;
+  margin: 3em auto;
+  background-color: #1c1c1c;
+  color: #f6efe7;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 1em;
+  display: block;
+}
+
+/* === Recipe Search Bar === */
+.recipe-search {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.7em 1.2em;
+  margin: 2em auto;
+  background-color: #1c1c1c;
+  color: #f6efe7;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 1em;
+  display: block;
+}
+
+.filter {
+  margin: 2.5em auto;
+  text-align: center;
+}
+
+.filter label {
+  margin-right: 0.6em;
+  font-weight: bold;
+  color: #f6efe7;
+}
+
+.filter select {
+  padding: 0.6em 1.2em;
+  background-color: #1c1c1c;
+  color: #f6efe7;
+  border: 1px solid #555;
+  border-radius: 6px;
+  width: 200px; /* Adjust width of the dropdown */
+}
+
+/* === Tag Filter - Checkbox Layout === */
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+}
+
+.filter-tags input[type="checkbox"] {
+  margin-right: 0.6em;
+  margin-bottom: 1em;
+}
+
+.filter-tags label {
+  color: #f6efe7;
+  font-size: 0.9em;
+  display: inline-block;
+  font-weight: normal;
+}
+
+/* === Sticky Nav Bar === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #1c1c1c, #2d333d);
+  padding: 1.5em 2em;
+  border-bottom: 3px solid #ba654e;
+  box-shadow: 0 6px 18px rgba(186, 101, 78, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-center {
+  justify-content: center;
+  flex: 1;
+}
+
+nav a {
+  padding: 0.6em 1.4em;
+  background-color: #3b414f;
+  border: 1px solid #ba654e;
+  border-radius: 8px;
+  color: #f6efe7;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: #ba654e;
+  color: #1c1c1c;
+  box-shadow: 0 0 12px #ba654e;
+}
+
+/* === Mobile View === */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack items on mobile */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5em 1em;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex: 1 1 auto;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+
+  .search {
+    width: 90%;
+    margin: 1.5em auto;
+  }
+
+  .grid {
+    gap: 1.5em; /* Adjust grid gap for small screens */
+  }
+
+  .filter {
+    width: 100%;
+    text-align: left;
+  }
+
+  .filter select {
+    width: 100%;
+  }
+
+  .filter-tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
