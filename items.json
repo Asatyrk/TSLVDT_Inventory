@@ -150,6 +150,12 @@
     "description": "A simple sewing kit. Sent with you to Space."
   },
   {
+    "id": "entomology_dissection_kit",
+    "name": "Entomology Dissection Kit",
+    "tags": ["Tool", "Special"],
+    "description": "A entomology kit, contains a few small containers, tweezers, small scissors and a handful of pins. Sent with you to Space."
+  },
+  {
     "id": "animal_horn",
     "name": "Animal Horn",
     "tags": ["Materials", "Animal Remains"],
@@ -388,6 +394,12 @@
     "name": "Viol",
     "tags": ["Games and Entertainment", "Special"],
     "description": "a viola da gamba, because a violin would be too simple. Sent with you to space."
+  },
+  {
+    "id": "jars_and_jugs",
+    "name": "Jars & Jugs",
+    "tags": ["Tool"],
+    "description": "A collection of jars and containers of various sizes, mostly made out of glass or plastic. Sent with you to space to collect samples."
   }
 
 ]
