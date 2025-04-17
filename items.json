@@ -348,6 +348,12 @@
     "description": "Standard pencils. Sent with you to space."
   },
   {
+    "id": "pen",
+    "name": "Pen",
+    "tags": ["Games and Entertainment", "Tool"],
+    "description": "Standard pens. Sent with you to space."
+  },
+  {
     "id": "eraser",
     "name": "Eraser",
     "tags": ["Games and Entertainment", "Tool"],
