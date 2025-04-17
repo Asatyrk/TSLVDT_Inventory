@@ -1,0 +1,297 @@
+[
+  {
+    "id": "any_meat",
+    "name": "Any Meat",
+    "tags": [],
+    "description": "."
+  },
+  {
+    "id": "any_fruit",
+    "name": "Any Fruit",
+    "tags": [],
+    "description": "."
+  },
+  {
+    "id": "days_rations_for_all",
+    "name": "Days Rations For All",
+    "tags": ["Edible"],
+    "description": "A collection of dried, long-life food - suitable for feeding six people for one day."
+  },
+  {
+    "id": "scrap_metal",
+    "name": "Scrap Metal",
+    "tags": ["Metal and Scrap", "Materials"],
+    "description": "A collection of various metal scraps - useful for crafting."
+  },
+  {
+    "id": "the_rover",
+    "name": "Mars/The Rover",
+    "tags": ["Special", "Metal and Scrap"],
+    "description": "A Rover sent alongside you."
+  },
+  {
+    "id": "bundle_of_sticks",
+    "name": "Bundle of Sticks",
+    "tags": [ "Materials", "Wood"],
+    "description": "A collection of various wooden sticks - useful for crafting."
+  },
+  {
+    "id": "poorly_made_axe",
+    "name": "Poorly-made Axe",
+    "tags": ["Weapon"],
+    "description": "A weak hand-made axe."
+  },
+  {
+    "id": "poorly_made_dagger",
+    "name": "Poorly-made Dagger",
+    "tags": ["Weapon"],
+    "description": "A weak hand-made dagger."
+  },
+  {
+    "id": "Basic_light_outfit",
+    "name": "Basic Light Outfit",
+    "tags": ["Clothing"],
+    "description": "A basic hand-made outfit. Airy and light, build for warm weather. Something like a vest and shorts, but your choice."
+  },
+  {
+    "id": "Basic_warm_outfit",
+    "name": "Basic Warm Clothes",
+    "tags": ["Clothing"],
+    "description": "A basic hand-made outfit. Bulky and warm, build for cold weather. Something like a coat and thermal pants, but your choice."
+  },
+  {
+    "id": "days_rations_of_water",
+    "name": "Days Rations Of Water",
+    "tags": ["Edible", "Water"],
+    "description": "A jug of purified water - suitable for hydrating six people for one day."
+  },
+  {
+    "id": "jar_of_water",
+    "name": "Jar Of Water",
+    "tags": ["Edible", "Water"],
+    "description": "A jar of purified water - suitable for hydrating one people for one day."
+  },
+  {
+    "id": "6mm_rope",
+    "name": "Rope (6mm)",
+    "tags": ["Rope and Thread", "Materials"],
+    "description": "A thin rope, about 6mm wide."
+  },
+  {
+    "id": "12mm_rope",
+    "name": "Rope (12mm)",
+    "tags": ["Rope and Thread", "Materials"],
+    "description": "A medium rope, about 12mm wide."
+  },
+  {
+    "id": "30mm_rope",
+    "name": "Rope (30mm)",
+    "tags": ["Rope and Thread", "Materials"],
+    "description": "A thick rope, about 30mm wide."
+  },
+  {
+    "id": "poorly_made_rope_sling",
+    "name": "Poorly-made Rope Sling",
+    "tags": ["Weapon"],
+    "description": "A weak hand-made rope sling."
+  },
+  {
+    "id": "poorly_made_spear",
+    "name": "Poorly-made Spear",
+    "tags": ["Weapon"],
+    "description": "A weak hand-made spear."
+  },
+  {
+    "id": "bundle_of_red_flowers",
+    "name": "Bundle of Red Flowers",
+    "tags": ["Vegetation", "Edible", "Ingredients"],
+    "description": "A bundle of a few red flowers. Loved by flufftails, makes a pretty good tea."
+  },
+  {
+    "id": "thread",
+    "name": "Thread",
+    "tags": ["Rope and Thread", "Materials"],
+    "description": "A thin thread which can be used for sewing."
+  },
+  {
+    "id": "animal_horn",
+    "name": "Animal Horn",
+    "tags": ["Materials", "Animal Remains"],
+    "description": "An animal (or creature) horn."
+  },
+  {
+    "id": "large_meat_chunk",
+    "name": "Large Meat Chunk",
+    "tags": ["Raw Meat", "Animal Remains", "Ingredients"],
+    "description": "A large chunk of meat from an animal. Can be cooked."
+  },
+  {
+    "id": "medium_meat_chunk",
+    "name": "Medium Meat Chunk",
+    "tags": ["Raw Meat", "Animal Remains", "Ingredients"],
+    "description": "A medium chunk of meat from an animal. Can be cooked."
+  },
+  {
+    "id": "small_meat_chunk",
+    "name": "Small Meat Chunk",
+    "tags": ["Raw Meat", "Animal Remains", "Ingredients"],
+    "description": "A small chunk of meat from an animal. Can be cooked."
+  },
+  {
+    "id": "large_pelt",
+    "name": "Large Pelt",
+    "tags": ["Leather and Pelts", "Animal Remains"],
+    "description": "A large pelt from an animal. Can be processed into leather."
+  },
+  {
+    "id": "medium_pelt",
+    "name": "Medium Pelt",
+    "tags": ["Leather and Pelts", "Animal Remains"],
+    "description": "A medium pelt from an animal. Can be processed into leather."
+  },
+  {
+    "id": "small_pelt",
+    "name": "Small Pelt",
+    "tags": ["Leather and Pelts", "Animal Remains"],
+    "description": "A small pelt from an animal. Can be processed into leather."
+  },
+  {
+    "id": "unpurified_fat",
+    "name": "Unpurified Fat",
+    "tags": ["Materials", "Animal Remains"],
+    "description": "Fat from an animal. Needs to be purified before use."
+  },
+  {
+    "id": "purified_fat",
+    "name": "Purified Fat",
+    "tags": ["Materials", "Edible", "Ingredients"],
+    "description": "Purified fat. Has many uses."
+  },
+  {
+    "id": "bones",
+    "name": "Bones",
+    "tags": ["Materials", "Animal Remains", "Ingredients"],
+    "description": "Bones from an animal."
+  },
+  {
+    "id": "bundle_of_blue_mushrooms",
+    "name": "Bundle of Blue Mushrooms",
+    "tags": ["Vegetation"],
+    "description": "A bundle of a few blue mushrooms. Glows. Doesn't seem edible."
+  },
+  {
+    "id": "T-1_Flux_User_Manual",
+    "name": "T-1 Flux User Manual",
+    "tags": ["Special"],
+    "description": "A manual on how to use the 'T-1 FLUX' tower."
+  },
+  {
+    "id": "bundle_of_various_screws",
+    "name": "Bundle of Various Screws",
+    "tags": ["Metal and Scrap"],
+    "description": "A bundle of various screws of different shapes and sizes."
+  },
+  {
+    "id": "bundle_of_grass",
+    "name": "Bundle of Grass",
+    "tags": ["Vegetation", "Materials"],
+    "description": "A bundle of grass, reeds and straw."
+  },
+  {
+    "id": "bundle_of_thatch",
+    "name": "Bundle of Thatch",
+    "tags": ["Materials"],
+    "description": "A bundle of thatch. Can be used for housing."
+  },
+  {
+    "id": "log",
+    "name": "log",
+    "tags": ["Wood", "Materials"],
+    "description": "A sturdy section of a log."
+  },
+  {
+    "id": "wooden_planks",
+    "name": "Wooden Planks",
+    "tags": ["Wood", "Materials"],
+    "description": "Processed wooden planks. Can be used for housing."
+  },
+  {
+    "id": "jar_of_sugar",
+    "name": "Jar of Sugar",
+    "tags": ["Edible", "Ingredients"],
+    "description": "A jar of purified sugar."
+  },
+  {
+    "id": "jar_of_ethanol",
+    "name": "Jar of Ethanol",
+    "tags": ["Edible", "Ingredients", "Materials"],
+    "description": "A jar of purified ethanol. Technically edible, but has better uses."
+  },
+  {
+    "id": "jar_of_vinegar",
+    "name": "Jar of Vinegar",
+    "tags": ["Edible", "Ingredients"],
+    "description": "A jar of purified Vinegar."
+  },
+  {
+    "id": "jar_of_pickled_blues",
+    "name": "Jar of Pickled Blues",
+    "tags": ["Edible", "Ingredients"],
+    "description": "A jar of fruit and/or veg - pickled in vinegar. Long-lasting."
+  },
+  {
+    "id": "jerky",
+    "name": "Jerky",
+    "tags": ["Edible"],
+    "description": "Dried, long-lasting, salted meat."
+  },
+  {
+    "id": "jar_of_salt",
+    "name": "Jar of Salt",
+    "tags": ["Edible", "Ingredients"],
+    "description": "A jar of purified salt."
+  },
+  {
+    "id": "charcoal",
+    "name": "Charcoal",
+    "tags": ["Materials"],
+    "description": "A pile of charcoal. Non-activated."
+  },
+  {
+    "id": "ash",
+    "name": "Ash",
+    "tags": ["Materials"],
+    "description": "A pile of ash."
+  },
+  {
+    "id": "solid_lye",
+    "name": "Solid Lye",
+    "tags": ["Materials"],
+    "description": "A pile of dried, solid lye. Makes soap. Irritant."
+  },
+  {
+    "id": "soap",
+    "name": "Soap",
+    "tags": ["Materials"],
+    "description": "A pile of dried, solid soap. Cleans things."
+  },
+  {
+    "id": "fabric",
+    "name": "Fabric",
+    "tags": ["Materials"],
+    "description": "Dry, clean fabric made from woven plant fibers."
+  },
+  {
+    "id": "leather",
+    "name": "Leather",
+    "tags": ["Materials", "Leather and Pelts"],
+    "description": "Dry, clean leather made from a dried animal pelt."
+  },
+  {
+    "id": "tannin",
+    "name": "Tannin",
+    "tags": ["Materials"],
+    "description": "Extracted tannin from tree bark."
+  }
+
+]
