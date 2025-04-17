@@ -102,6 +102,36 @@
     "description": "A weak hand-made spear."
   },
   {
+    "id": "poorly_made_hammer",
+    "name": "Poorly-made Hammer",
+    "tags": ["Weapon", "Tool"],
+    "description": "A weak hand-made hammer."
+  },
+  {
+    "id": "poorly_made_cooking_pot",
+    "name": "Poorly-made Cooking Pot",
+    "tags": ["Tool"],
+    "description": "A weak hand-made cooking pot. Good for boiling and mixing."
+  },
+  {
+    "id": "poorly_made_cooking_pan",
+    "name": "Poorly-made Cooking Pan",
+    "tags": ["Tool"],
+    "description": "A weak hand-made cooking pan. Good for cooking and frying."
+  },
+  {
+    "id": "poorly_made_shield",
+    "name": "Poorly-made Shield",
+    "tags": ["Armour, Shields and Defense"],
+    "description": "A weak hand-made shield."
+  },
+  {
+    "id": "poorly_made_armour",
+    "name": "Poorly-made Armour",
+    "tags": ["Armour, Shields and Defense"],
+    "description": "Weak hand-made leather armour."
+  },
+  {
     "id": "bundle_of_red_flowers",
     "name": "Bundle of Red Flowers",
     "tags": ["Vegetation", "Edible", "Ingredients"],
@@ -292,6 +322,60 @@
     "name": "Tannin",
     "tags": ["Materials"],
     "description": "Extracted tannin from tree bark."
+  },
+  {
+    "id": "playing_cards",
+    "name": "Playing Cards",
+    "tags": ["Games and Entertainment"],
+    "description": "Basic 52-card deck. Sent with you to space."
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "tags": ["Games and Entertainment"],
+    "description": "Various books, some may or may not be about tragic early 2000's events and/or woman-loving-woman plotlines. Sent with you to space."
+  },
+  {
+    "id": "pencil",
+    "name": "Pencil",
+    "tags": ["Games and Entertainment", "Tool"],
+    "description": "Standard pencils. Sent with you to space."
+  },
+  {
+    "id": "eraser",
+    "name": "Eraser",
+    "tags": ["Games and Entertainment", "Tool"],
+    "description": "Standard eraser. Sent with you to space."
+  },
+  {
+    "id": "sentimental_photo",
+    "name": "Sentimental Photo",
+    "tags": ["Games and Entertainment", "Special"],
+    "description": "Sent with you to space. It reminds you what you're surviving for."
+  },
+  {
+    "id": "herbal_sprig_necklace",
+    "name": "Herbal Sprig Necklace",
+    "tags": ["Special"],
+    "description": "A necklace fused with energy from naturally occuring magic. Sent with you to space."
+  },
+  {
+    "id": "notebook",
+    "name": "Notebook",
+    "tags": ["Games and Entertainment"],
+    "description": "A notebook or sketchbook, good for noting things down. Sent with you to space."
+  },
+  {
+    "id": "dinosaur_toy",
+    "name": "Dinosaur Toy",
+    "tags": ["Games and Entertainment", "Special"],
+    "description": "Dinonaurrr !!!! Rawwr !!! Sent with you to space."
+  },
+  {
+    "id": "viol",
+    "name": "Viol",
+    "tags": ["Games and Entertainment", "Special"],
+    "description": "a viola da gamba, because a violin would be too simple. Sent with you to space."
   }
 
 ]
