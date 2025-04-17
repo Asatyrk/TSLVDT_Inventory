@@ -1,0 +1,249 @@
+[
+  {
+    "output": { "id": "6mm_rope", "quantity": 15 },
+    "name": "Rope (6mm) x15",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 20 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "none"
+  },
+  {
+    "output": { "id": "12mm_rope", "quantity": 10 },
+    "name": "Rope (12mm) x10",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 20 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "none"
+  },
+  {
+    "output": { "id": "30mm_rope", "quantity": 3 },
+    "name": "Rope (30mm) x3",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 20 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "none"
+  },
+  {
+    "output": { "id": "Bundle_of_thatch", "quantity": 5 },
+    "name": "Bundle of Thatch x5",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 10 }
+    ],
+    "tags": ["Easy", "Sun-dry", "Time"],
+    "tool": "Sun-dry, Time (4 days)"
+  },
+  {
+    "output": { "id": "Thread", "quantity": 3 },
+    "name": "Thread x3",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "none"
+  },
+  {
+    "output": { "id": "charcoal", "quantity": 5 },
+    "name": "Charcoal x5",
+    "inputs": [
+      { "id": "log", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Bonfire", "Metal container"],
+    "tool": "Bonfire, Metal container"
+  },
+  {
+    "output": { "id": "ash", "quantity": 5 },
+    "name": "Ash x5",
+    "inputs": [
+      { "id": "bundle_of_sticks", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Bonfire"],
+    "tool": "Bonfire"
+  },
+  {
+    "output": { "id": "bundle_of_sticks", "quantity": 12 },
+    "name": "Bundle of Sticks x12",
+    "inputs": [
+      { "id": "log", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Axe"],
+    "tool": "Axe"
+  },
+  {
+    "output": { "id": "wooden_planks", "quantity": 4 },
+    "name": "Wooden Planks x4",
+    "inputs": [
+      { "id": "log", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Axe"],
+    "tool": "Axe"
+  },
+  {
+    "output": { "id": "jar_of_ethanol", "quantity": 1 },
+    "name": "Jar of Ethanol x1",
+    "inputs": [
+      { "id": "jar_of_sugar", "quantity": 3 },
+      { "id": "any_fruit", "quantity": 3 }
+    ],
+    "tags": ["Easy", "Glass Jar", "Time"],
+    "tool": "Glass Jar, Time (3 days)"
+  },
+  {
+    "output": { "id": "jar_of_pickled_blues", "quantity": 1 },
+    "name": "Jar of Pickled Blues x1",
+    "inputs": [
+      { "id": "jar_of_vinegar", "quantity": 1 },
+      { "id": "any_fruit", "quantity": 6 }
+    ],
+    "tags": ["Easy", "Glass Jar", "Time"],
+    "tool": "Glass Jar, Time (3 weeks)" 
+  },
+  {
+    "output": { "id": "jerky", "quantity": 6 },
+    "name": "Jerky x6",
+    "inputs": [
+      { "id": "medium_meat_chunk", "quantity": 1 },
+      { "id": "jar_of_salt", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Sun-dry", "Time"],
+    "tool": "Sun-dry, Time (6 hours)"
+  },
+  {
+    "output": { "id": "soap", "quantity": 1 },
+    "name": "Soap x1",
+    "inputs": [
+      { "id": "purified_fat", "quantity": 2 },
+      { "id": "jar_of_water", "quantity": 1 },
+      { "id": "solid_lye", "quantity": 3 }
+    ],
+    "tags": ["Medium", "Bonfire", "Metal Container", "Time"],
+    "tool": "Bonfire, Metal Container, Time (3 weeks)"
+  },
+  {
+    "output": { "id": "solid_lye", "quantity": 5 },
+    "name": "Solid Lye x5",
+    "inputs": [
+      { "id": "jar_of_water", "quantity": 1 },
+      { "id": "ash", "quantity": 8 }
+    ],
+    "tags": ["Medium", "Bonfire", "Metal Container", "Cloth Bag", "Sun-dry", "Time"],
+    "tool": "Bonfire, Metal Container, Cloth Bag, Sun-dry, Time (2 days)"
+  },
+  {
+    "output": { "id": "poorly_made_axe", "quantity": 1 },
+    "name": "Poorly-made Axe",
+    "inputs": [
+      { "id": "bundle_of_sticks", "quantity": 1 },
+      { "id": "scrap_metal", "quantity": 1 },
+      { "id": "6mm_rope", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
+    "output": { "id": "poorly_made_dagger", "quantity": 1 },
+    "name": "Poorly-made Dagger",
+    "inputs": [
+      { "id": "bundle_of_sticks", "quantity": 1 },
+      { "id": "scrap_metal", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
+    "output": { "id": "poorly_made_rope_sling", "quantity": 1 },
+    "name": "Poorly-made Rope Sling",
+    "inputs": [
+      { "id": "thread", "quantity": 1 },
+      { "id": "6mm_rope", "quantity": 4 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
+    "output": { "id": "poorly_made_spear", "quantity": 1 },
+    "name": "Poorly-made Spear",
+    "inputs": [
+      { "id": "bundle_of_sticks", "quantity": 2 },
+      { "id": "scrap_metal", "quantity": 2 },
+      { "id": "6mm_rope", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
+    "output": { "id": "basic_light_outfit", "quantity": 1 },
+    "name": "Basic light Outfit",
+    "inputs": [
+      { "id": "Fabric", "quantity": 1 },
+      { "id": "Leather", "quantity": 1 },
+      { "id": "thread", "quantity": 2 }
+    ],
+    "tags": ["Easy", "Sewing kit"],
+    "tool": "Sewing kit"
+  },
+  {
+    "output": { "id": "basic_warm_outfit", "quantity": 1 },
+    "name": "Basic Warm Outfit",
+    "inputs": [
+      { "id": "Fabric", "quantity": 2 },
+      { "id": "Leather", "quantity": 2 },
+      { "id": "thread", "quantity": 3 }
+    ],
+    "tags": ["Easy", "Sewing kit"],
+    "tool": "Sewing kit"
+  },
+  {
+    "output": { "id": "fabric", "quantity": 3 },
+    "name": "Fabric x3",
+    "inputs": [
+      { "id": "bundle_of_grass", "quantity": 10 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
+    "output": { "id": "leather", "quantity": 1 },
+    "name": "Leather x1",
+    "inputs": [
+      { "id": "salt", "quantity": 1 },
+      { "id": "tannin", "quantity": 1 },
+      { "id": "small_pelt", "quantity": 1 }
+    ],
+    "tags": ["Medium", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "leather", "quantity": 3 },
+    "name": "Leather x3",
+    "inputs": [
+      { "id": "salt", "quantity": 3 },
+      { "id": "tannin", "quantity": 2 },
+      { "id": "medium_pelt", "quantity": 1 }
+    ],
+    "tags": ["Medium", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "leather", "quantity": 5 },
+    "name": "Leather x5",
+    "inputs": [
+      { "id": "salt", "quantity": 5 },
+      { "id": "tannin", "quantity": 3 },
+      { "id": "large_pelt", "quantity": 1 }
+    ],
+    "tags": ["Medium", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "tannin", "quantity": 5 },
+    "name": "Tannin x5",
+    "inputs": [
+      { "id": "log", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Bonfire", "Metal Container"],
+    "tool": "Bonfire, Metal Container"
+  }
+]
