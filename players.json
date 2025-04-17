@@ -15,13 +15,21 @@
       { "id": "large_pelt", "quantity": 1 },
       { "id": "unpurified_fat", "quantity": 5 },
       { "id": "bones", "quantity": 8 },
-      { "id": "bundle_of_blue_mushrooms", "quantity": 3 }
+      { "id": "bundle_of_blue_mushrooms", "quantity": 3 },
+      { "id": "playing_cards", "quantity": 1 },
+      { "id": "pencil", "quantity": 5 },
+      { "id": "eraser", "quantity": 3 },
+      { "id": "book", "quantity": 3 }
     ]
   },
   {
     "name": "Hemlock",
     "items": [
-      { "id": "poorly_made_dagger", "quantity": 1 }
+      { "id": "poorly_made_dagger", "quantity": 1 },
+      { "id": "book", "quantity": 1 },
+      { "id": "pencil", "quantity": 1 },
+      { "id": "notebook", "quantity": 1 },
+      { "id": "viol", "quantity": 1 }
     ]
   },
   {
@@ -42,7 +50,12 @@
   {
     "name": "Badge",
     "items": [
-      { "id": "poorly_made_dagger", "quantity": 1 }
+      { "id": "poorly_made_dagger", "quantity": 1 },
+      { "id": "pencil", "quantity": 1 },
+      { "id": "eraser", "quantity": 1 },
+      { "id": "dinosaur_toy", "quantity": 1 },
+      { "id": "book", "quantity": 1 },
+      { "id": "pen", "quantity": 1 }
     ]
   },
   {
@@ -50,7 +63,11 @@
     "items": [
       { "id": "poorly_made_axe", "quantity": 1 },
       { "id": "bundle_of_red_flowers", "quantity": 4 },
-      { "id": "bundle_of_blue_mushrooms", "quantity": 3 }
+      { "id": "bundle_of_blue_mushrooms", "quantity": 3 },
+      { "id": "sentimental_photo", "quantity": 1 },
+      { "id": "notebook", "quantity": 1 },
+      { "id": "pencil", "quantity": 3 },
+      { "id": "herbal_sprig_necklace", "quantity": 1 }
     ]
   },
   {
@@ -58,7 +75,8 @@
     "items": [
       { "id": "poorly_made_dagger", "quantity": 1 },
       { "id": "bundle_of_red_flowers", "quantity": 5 },
-      { "id": "bundle_of_various_screws", "quantity": 5 }
+      { "id": "bundle_of_various_screws", "quantity": 5 },
+      { "id": "sewing_kit", "quantity": 1 }
     ]
   }
 ]
