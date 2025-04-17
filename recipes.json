@@ -174,6 +174,17 @@
     "tool": "None"
   },
   {
+    "output": { "id": "poorly_made_bow", "quantity": 1 },
+    "name": "Poorly-made Bow",
+    "inputs": [
+      { "id": "bundle_of_sticks", "quantity": 3 },
+      { "id": "rawhide", "quantity": 1 },
+      { "id": "6mm_rope", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
     "output": { "id": "poorly_made_cooking_pan", "quantity": 1 },
     "name": "Poorly-made Cooking Pan",
     "inputs": [
@@ -284,6 +295,36 @@
       { "id": "large_pelt", "quantity": 1 }
     ],
     "tags": ["Medium", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "rawhide", "quantity": 1 },
+    "name": "Rawhide x1",
+    "inputs": [
+      { "id": "jar_of_salt", "quantity": 1 },
+      { "id": "small_pelt", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "rawhide", "quantity": 3 },
+    "name": "Rawhide x3",
+    "inputs": [
+      { "id": "jar_of_salt", "quantity": 2 },
+      { "id": "medium_pelt", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Sun-dry", "Tanning Rack"],
+    "tool": "Sun-dry, Tanning Rack"
+  },
+  {
+    "output": { "id": "rawhide", "quantity": 5 },
+    "name": "Rawhide x5",
+    "inputs": [
+      { "id": "jar_of_salt", "quantity": 3 },
+      { "id": "large_pelt", "quantity": 1 }
+    ],
+    "tags": ["Easy", "Sun-dry", "Tanning Rack"],
     "tool": "Sun-dry, Tanning Rack"
   },
   {
