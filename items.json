@@ -128,7 +128,7 @@
   {
     "id": "poorly_made_armour",
     "name": "Poorly-made Armour",
-    "tags": ["Armour, Shields and Defense"],
+    "tags": ["Armour, Shields and Defense", "Clothing"],
     "description": "Weak hand-made leather armour."
   },
   {
@@ -400,6 +400,12 @@
     "name": "Jars & Jugs",
     "tags": ["Tool"],
     "description": "A collection of jars and containers of various sizes, mostly made out of glass or plastic. Sent with you to space to collect samples."
+  },
+  {
+    "id": "space_suit",
+    "name": "Sapce Suit",
+    "tags": ["Clothing"],
+    "description": "A padded outfit build for space, slightly damaged from impact. Sent with you to space."
   }
 
 ]
