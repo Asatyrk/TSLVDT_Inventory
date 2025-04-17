@@ -299,7 +299,7 @@
     "output": { "id": "jar_of_vinegar", "quantity": 2 },
     "name": "Jar of Vinegar x2",
     "inputs": [
-      { "id": "jar_of_suagr", "quantity": 3 },
+      { "id": "jar_of_sugar", "quantity": 3 },
       { "id": "any_fruit", "quantity": 3 }
     ],
     "tags": ["Easy", "Glass Jar", "Time"],
