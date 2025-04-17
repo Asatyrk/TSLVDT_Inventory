@@ -231,7 +231,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #1c1c1c, #2d333d);
+  background-color: #1c1c1c;
   padding: 1.5em 2em;
   border-bottom: 3px solid #ba654e;
   box-shadow: 0 6px 18px rgba(186, 101, 78, 0.35);
