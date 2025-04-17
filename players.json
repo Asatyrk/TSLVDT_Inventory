@@ -19,7 +19,8 @@
       { "id": "playing_cards", "quantity": 1 },
       { "id": "pencil", "quantity": 5 },
       { "id": "eraser", "quantity": 3 },
-      { "id": "book", "quantity": 3 }
+      { "id": "book", "quantity": 3 },
+      { "id": "jars_and_jugs", "quantity": 10 }
     ]
   },
   {
@@ -44,7 +45,11 @@
   {
     "name": "Elias",
     "items": [
-      { "id": "poorly_made_dagger", "quantity": 1 }
+      { "id": "poorly_made_dagger", "quantity": 1 },
+      { "id": "pencil", "quantity": 2 },
+      { "id": "pen", "quantity": 1 },
+      { "id": "entomology_dissection_kit", "quantity": 1 },
+      { "id": "jars_and_jugs", "quantity": 4 }
     ]
   },
   {
