@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TSLVDT Inventory</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a onclick="showTab('overall')">Overall Inventory</a>
+    </div>
+    <div class="nav-center" id="playerLinks"></div>
+    <div class="nav-right">
+      <a onclick="showTab('recipes')">Recipes</a>
+    </div>
+  </nav>
+
+  <div id="overallTab">
+    <h1>Overall Inventory</h1>
+    <input type="text" id="searchInput" class="search" placeholder="Search items...">
+    <div class="filter" id="tagCheckboxes"></div>
+    <div id="inventoryList" class="grid"></div> 
+  </div>
+
+  <div id="playerTabs"></div>
+
+  <div id="recipesTab" style="display:none">
+    <h1>Recipes</h1>
+    <input type="text" id="recipeSearch" class="search" placeholder="Search recipes...">
+    <div class="filter" id="recipeTagCheckboxes"></div>
+    <div id="recipeList" class="grid"></div> 
+  </div>
+
+  <script>
+    let items = [];
+    let players = [];
+    let recipes = [];
+
+    function getOverallInventory(players) {
+      const total = {};
+      players.forEach(player => {
+        player.items.forEach(entry => {
+
+
+          if (!total[entry.id]) total[entry.id] = 0;
+          total[entry.id] += entry.quantity;
+        });
+      });
+      return total;
+    }
+
+    function getAllTags(items) {
+      const tagSet = new Set();
+      items.forEach(item => item.tags.forEach(tag => tagSet.add(tag)));
+      return Array.from(tagSet).sort();
+    }
+
+    function getAllRecipeTags(recipes) {
+      const tagSet = new Set();
+      recipes.forEach(r => r.tags?.forEach(tag => tagSet.add(tag)));
+      return Array.from(tagSet).sort();
+    }
+
+    function createCheckboxFilter(containerId, tags, onChangeHandler) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '<strong>Filter by Tag:</strong><br>';
+      const select = document.createElement("select");
+      select.innerHTML = `<option value="">All</option>` + tags.map(tag => `<option value="${tag}">${tag}</option>`).join('');
+      select.addEventListener("change", onChangeHandler);
+      container.appendChild(select);
+    }
+
+    function getCheckedTags(containerId) {
+      const select = document.querySelector(`#${containerId} select`);
+      const val = select?.value;
+      return val ? [val] : [];
+    }
+
+    function renderInventory() {
+      const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+      const selectedTags = getCheckedTags("tagCheckboxes");
+      const container = document.getElementById("inventoryList");
+      container.innerHTML = "";
+      const totals = getOverallInventory(players);
+
+      Object.keys(totals)
+  .map(id => items.find(i => i.id === id))
+  .filter(item => item) // ignore missing
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .forEach(item => {
+    const id = item.id;
+    const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesTags = selectedTags.length === 0 || selectedTags.every(tag => item.tags.includes(tag));
+    if (!matchesSearch || !matchesTags) return;
+
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = `<strong>${item.name}</strong> (x${totals[id]})
+                     <em>${item.description}</em>
+                     <span class="tags">Tags: ${item.tags.join(", ")}</span>`;
+    container.appendChild(div);
+    });
+    }
+
+    function renderPlayerInventory(playerName) {
+      const searchInput = document.getElementById(`${playerName}Search`);
+      const searchTerm = searchInput ? searchInput.value.toLowerCase() : "";
+      const player = players.find(p => p.name.toLowerCase() === playerName);
+      const container = document.getElementById(`${playerName}Inventory`);
+      if (!container || !player) return;
+      container.innerHTML = "";
+
+      player.items.forEach(entry => {
+        const item = items.find(i => i.id === entry.id);
+        if (!item) return;
+        if (searchTerm && !item.name.toLowerCase().includes(searchTerm)) return;
+
+        const div = document.createElement("div");
+        div.className = "item";
+        div.innerHTML = `<strong>${item.name}</strong> (x${entry.quantity})
+                         <em>${item.description}</em>
+                         <span class="tags">Tags: ${item.tags.join(", ")}</span>`;
+        container.appendChild(div);
+      });
+    }
+
+function renderRecipes() {
+  const searchTerm = document.getElementById("recipeSearch")?.value.toLowerCase() || "";
+  const selectedTags = getCheckedTags("recipeTagCheckboxes");
+  const container = document.getElementById("recipeList");
+  container.innerHTML = "";
+
+  recipes
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach(recipe => {
+      const matchesSearch = recipe.name.toLowerCase().includes(searchTerm);
+      const matchesTags = selectedTags.length === 0 || selectedTags.every(tag => recipe.tags?.includes(tag));
+      if (!matchesSearch || !matchesTags) return;
+
+      const inputItems = recipe.inputs.map(input => {
+        const item = items.find(i => i.id === input.id);
+        return item ? `${input.quantity}x ${item.name}` : `${input.quantity}x Unknown`;
+      }).join(", ");
+
+      const div = document.createElement("div");
+      div.className = "item";
+      div.innerHTML = `<strong>${recipe.name}</strong>
+                       <em>Requires: ${inputItems}</em>
+                       <span class="tags">Tags: ${recipe.tags?.join(", ")}</span>
+                       <span class="tags">Tools: ${recipe.tool ?? "None"}</span>`;
+      container.appendChild(div);
+    });
+}
+
+    function showTab(tab) {
+      document.getElementById("overallTab").style.display = tab === 'overall' ? "block" : "none";
+      document.getElementById("recipesTab").style.display = tab === 'recipes' ? "block" : "none";
+
+      players.forEach(player => {
+        const tabId = `${player.name.toLowerCase()}Tab`;
+        const tabEl = document.getElementById(tabId);
+        if (tabEl) tabEl.style.display = tab === player.name.toLowerCase() ? "block" : "none";
+      });
+    }
+
+    document.getElementById("searchInput").addEventListener("input", renderInventory);
+
+    Promise.all([
+      fetch("items.json").then(res => res.json()),
+      fetch("players.json").then(res => res.json()),
+      fetch("recipes.json").then(res => res.json())
+    ]).then(([loadedItems, loadedPlayers, loadedRecipes]) => {
+      items = loadedItems;
+      players = loadedPlayers;
+      recipes = loadedRecipes;
+
+      const linkContainer = document.getElementById("playerLinks");
+      const tabContainer = document.getElementById("playerTabs");
+
+      players.forEach(player => {
+        const lowerName = player.name.toLowerCase();
+
+        const link = document.createElement("a");
+        link.textContent = player.name;
+        link.onclick = () => showTab(lowerName);
+        linkContainer.appendChild(link);
+
+        const div = document.createElement("div");
+        div.id = `${lowerName}Tab`;
+        div.style.display = "none";
+        div.innerHTML = `<h1>${player.name}'s Inventory</h1>
+                          <input type="text" class="search" id="${lowerName}Search" placeholder="Search items...">
+                          <div id="${lowerName}Inventory" class="grid"></div>`;
+        tabContainer.appendChild(div);
+
+        document.getElementById(`${lowerName}Search`).addEventListener("input", () => renderPlayerInventory(lowerName));
+
+        renderPlayerInventory(lowerName);
+      });
+
+      createCheckboxFilter("tagCheckboxes", getAllTags(items), renderInventory);
+      createCheckboxFilter("recipeTagCheckboxes", getAllRecipeTags(recipes), renderRecipes);
+
+      renderInventory();
+      renderRecipes();
+      document.getElementById("recipeSearch").addEventListener("input", renderRecipes);
+    }).catch(err => {
+      console.error("Error loading JSON files:", err);
+    });
+  </script>
+</body>
+</html>
