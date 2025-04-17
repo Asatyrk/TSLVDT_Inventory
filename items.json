@@ -146,7 +146,7 @@
   {
     "id": "sewing_kit",
     "name": "Sewing Kit",
-    "tags": ["Tools"],
+    "tags": ["Tool"],
     "description": "A simple sewing kit. Sent with you to Space."
   },
   {
