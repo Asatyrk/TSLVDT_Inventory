@@ -1,29 +1,5 @@
 [
   {
-    "name": "Camp",
-    "items": [
-      { "id": "days_rations_for_all", "quantity": 2 },
-      { "id": "scrap_metal", "quantity": 10 },
-      { "id": "the_rover", "quantity": 1 },
-      { "id": "bundle_of_sticks", "quantity": 10 },
-      { "id": "days_rations_of_water", "quantity": 4 },
-      { "id": "6mm_rope", "quantity": 12 },
-      { "id": "bundle_of_red_flowers", "quantity": 20 },
-      { "id": "thread", "quantity": 1 },
-      { "id": "animal_horn", "quantity": 2 },
-      { "id": "large_meat_chunk", "quantity": 4 },
-      { "id": "large_pelt", "quantity": 1 },
-      { "id": "unpurified_fat", "quantity": 5 },
-      { "id": "bones", "quantity": 8 },
-      { "id": "bundle_of_blue_mushrooms", "quantity": 3 },
-      { "id": "playing_cards", "quantity": 1 },
-      { "id": "pencil", "quantity": 5 },
-      { "id": "eraser", "quantity": 3 },
-      { "id": "book", "quantity": 3 },
-      { "id": "jars_and_jugs", "quantity": 10 }
-    ]
-  },
-  {
     "name": "Hemlock",
     "items": [
       { "id": "poorly_made_dagger", "quantity": 1 },
@@ -87,6 +63,30 @@
       { "id": "bundle_of_various_screws", "quantity": 5 },
       { "id": "sewing_kit", "quantity": 1 },
       { "id": "space_suit", "quantity": 1 }
+    ]
+  },
+  {
+    "name": "Camp",
+    "items": [
+      { "id": "days_rations_for_all", "quantity": 2 },
+      { "id": "scrap_metal", "quantity": 10 },
+      { "id": "the_rover", "quantity": 1 },
+      { "id": "bundle_of_sticks", "quantity": 10 },
+      { "id": "days_rations_of_water", "quantity": 4 },
+      { "id": "6mm_rope", "quantity": 12 },
+      { "id": "bundle_of_red_flowers", "quantity": 20 },
+      { "id": "thread", "quantity": 1 },
+      { "id": "animal_horn", "quantity": 2 },
+      { "id": "large_meat_chunk", "quantity": 4 },
+      { "id": "large_pelt", "quantity": 1 },
+      { "id": "unpurified_fat", "quantity": 5 },
+      { "id": "bones", "quantity": 8 },
+      { "id": "bundle_of_blue_mushrooms", "quantity": 3 },
+      { "id": "playing_cards", "quantity": 1 },
+      { "id": "pencil", "quantity": 5 },
+      { "id": "eraser", "quantity": 3 },
+      { "id": "book", "quantity": 3 },
+      { "id": "jars_and_jugs", "quantity": 10 }
     ]
   }
 ]
