@@ -144,6 +144,12 @@
     "description": "A thin thread which can be used for sewing."
   },
   {
+    "id": "sewing_kit",
+    "name": "Sewing Kit",
+    "tags": ["Tools"],
+    "description": "A simple sewing kit. Sent with you to Space."
+  },
+  {
     "id": "animal_horn",
     "name": "Animal Horn",
     "tags": ["Materials", "Animal Remains"],
