@@ -102,6 +102,12 @@
     "description": "A weak hand-made spear."
   },
   {
+    "id": "poorly_made_bow",
+    "name": "Poorly-made Bow",
+    "tags": ["Weapon"],
+    "description": "A weak hand-made bow."
+  },
+  {
     "id": "poorly_made_hammer",
     "name": "Poorly-made Hammer",
     "tags": ["Weapon", "Tool"],
@@ -328,6 +334,12 @@
     "name": "Leather",
     "tags": ["Materials", "Leather and Pelts"],
     "description": "Dry, clean leather made from a dried animal pelt."
+  },
+  {
+    "id": "rawhide",
+    "name": "Rawhide",
+    "tags": ["Materials", "Leather and Pelts"],
+    "description": "Rawhide made from a dried animal pelt."
   },
   {
     "id": "tannin",
