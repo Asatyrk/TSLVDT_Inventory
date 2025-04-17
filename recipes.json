@@ -174,11 +174,39 @@
     "tool": "None"
   },
   {
+    "output": { "id": "poorly_made_cooking_pan", "quantity": 1 },
+    "name": "Poorly-made Cooking Pan",
+    "inputs": [
+      { "id": "scrap_metal", "quantity": 2 }
+    ],
+    "tags": ["Easy", "Hammer"],
+    "tool": "Hammer"
+  },
+  {
+    "output": { "id": "poorly_made_cooking_pot", "quantity": 1 },
+    "name": "Poorly-made Cooking Pot",
+    "inputs": [
+      { "id": "scrap_metal", "quantity": 2 }
+    ],
+    "tags": ["Easy", "Hammer"],
+    "tool": "Hammer"
+  },
+  {
+    "output": { "id": "poorly_made_hammer", "quantity": 1 },
+    "name": "Poorly-made Hammer",
+    "inputs": [
+      { "id": "scrap_metal", "quantity": 1 },
+      { "id": "bundle_of_sticks", "quantity": 1 }
+    ],
+    "tags": ["Easy", "No Tool Required"],
+    "tool": "None"
+  },
+  {
     "output": { "id": "basic_light_outfit", "quantity": 1 },
     "name": "Basic light Outfit",
     "inputs": [
-      { "id": "Fabric", "quantity": 1 },
-      { "id": "Leather", "quantity": 1 },
+      { "id": "fabric", "quantity": 1 },
+      { "id": "leather", "quantity": 1 },
       { "id": "thread", "quantity": 2 }
     ],
     "tags": ["Easy", "Sewing kit"],
@@ -188,12 +216,33 @@
     "output": { "id": "basic_warm_outfit", "quantity": 1 },
     "name": "Basic Warm Outfit",
     "inputs": [
-      { "id": "Fabric", "quantity": 2 },
-      { "id": "Leather", "quantity": 2 },
+      { "id": "fabric", "quantity": 2 },
+      { "id": "leather", "quantity": 2 },
       { "id": "thread", "quantity": 3 }
     ],
     "tags": ["Easy", "Sewing kit"],
     "tool": "Sewing kit"
+  },
+  {
+    "output": { "id": "poorly_made_armour", "quantity": 1 },
+    "name": "Poorly-made Armour",
+    "inputs": [
+      { "id": "fabric", "quantity": 2 },
+      { "id": "leather", "quantity": 4 },
+      { "id": "thread", "quantity": 3 }
+    ],
+    "tags": ["Easy", "Sewing kit"],
+    "tool": "Sewing kit"
+  },
+  {
+    "output": { "id": "poorly_made_shield", "quantity": 1 },
+    "name": "Poorly-made Shield",
+    "inputs": [
+      { "id": "wooden_planks", "quantity": 3 },
+      { "id": "scrap_metal", "quantity": 2 }
+    ],
+    "tags": ["Easy", "Hammer"],
+    "tool": "Hammer"
   },
   {
     "output": { "id": "fabric", "quantity": 3 },
@@ -208,7 +257,7 @@
     "output": { "id": "leather", "quantity": 1 },
     "name": "Leather x1",
     "inputs": [
-      { "id": "salt", "quantity": 1 },
+      { "id": "jar_of_salt", "quantity": 1 },
       { "id": "tannin", "quantity": 1 },
       { "id": "small_pelt", "quantity": 1 }
     ],
@@ -219,7 +268,7 @@
     "output": { "id": "leather", "quantity": 3 },
     "name": "Leather x3",
     "inputs": [
-      { "id": "salt", "quantity": 3 },
+      { "id": "jar_of_salt", "quantity": 3 },
       { "id": "tannin", "quantity": 2 },
       { "id": "medium_pelt", "quantity": 1 }
     ],
@@ -230,7 +279,7 @@
     "output": { "id": "leather", "quantity": 5 },
     "name": "Leather x5",
     "inputs": [
-      { "id": "salt", "quantity": 5 },
+      { "id": "jar_of_salt", "quantity": 5 },
       { "id": "tannin", "quantity": 3 },
       { "id": "large_pelt", "quantity": 1 }
     ],
@@ -245,5 +294,15 @@
     ],
     "tags": ["Easy", "Bonfire", "Metal Container"],
     "tool": "Bonfire, Metal Container"
+  },
+  {
+    "output": { "id": "jar_of_vinegar", "quantity": 2 },
+    "name": "Jar of Vinegar x2",
+    "inputs": [
+      { "id": "jar_of_suagr", "quantity": 3 },
+      { "id": "any_fruit", "quantity": 3 }
+    ],
+    "tags": ["Easy", "Glass Jar", "Time"],
+    "tool": "Glass Jar, Time (3 weeks)"
   }
 ]
